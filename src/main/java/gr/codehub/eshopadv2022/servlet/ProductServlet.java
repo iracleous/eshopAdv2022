@@ -16,15 +16,13 @@ public class ProductServlet extends HttpServlet {
 
     public void init() {
         message = "Requested product";
-        product = market.findProduct("snack");
+
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
-
-        response.setContentType("text/html");
-
-        // Hello
+       response.setContentType("text/html");
+        product = market.findProduct("snack");
+       // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
@@ -33,7 +31,6 @@ public class ProductServlet extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
         String productName = request.getParameter("productName");
         response.setContentType("text/html");
         product = market.findProduct(productName);
