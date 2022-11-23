@@ -7,7 +7,7 @@ public class MarketImpl implements Market{
     public Product findProduct(String productName) {
         return   Product
                 .builder()
-                .name("snack")
+                .name(productName)
                 .price(1.20)
                 .id(12)
                 .build();

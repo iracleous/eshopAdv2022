@@ -20,6 +20,8 @@ public class ProductServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+
         response.setContentType("text/html");
 
         // Hello
@@ -29,6 +31,20 @@ public class ProductServlet extends HttpServlet {
         out.println("<p>" + product + "</p>");
         out.println("</body></html>");
     }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        String productName = request.getParameter("productName");
+        response.setContentType("text/html");
+        product = market.findProduct(productName);
+        // Hello
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<h1>" + productName + "</h1>");
+        out.println("<p>" + product + "</p>");
+        out.println("</body></html>");
+    }
+
 
     public void destroy() {
     }

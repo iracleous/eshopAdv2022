@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="eshopAdv2022-1.0-SNAPSHOT.war">
+    <root id="archive" name="Advantage-Eshop.war">
       <element id="artifact" artifact-name="eshopAdv2022:war exploded" />
     </root>
   </artifact>

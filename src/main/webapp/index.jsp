@@ -7,8 +7,14 @@
 <body>
 <h1><% out.print("Hello World to All Advantagers");  %>
 </h1>
-uuuuuu
+
 <br/>
+<form action="product" method="post">
+  Name of product  <input name="productName"><br>
+    <input type="submit">
+
+</form>
+<hr>
 <a href="product">See my product</a>
 </body>
 </html>
