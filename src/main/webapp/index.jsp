@@ -8,7 +8,7 @@
     <h1><% out.print("Hello World to All Advantagers");  %>   </h1>
 
     <br/>
-
+kati
     <a href="myCompany.html">Company</a> | <a href="second.jsp">Other page</a> | <a href="api/eshop/1">check api</a>
     <br><br>
 
