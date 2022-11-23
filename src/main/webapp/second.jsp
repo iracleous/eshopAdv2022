@@ -12,5 +12,6 @@
 </head>
 <body>
 
+<%@include file="headerpage.jsp"%>
 </body>
 </html>
