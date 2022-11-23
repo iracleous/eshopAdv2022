@@ -20,12 +20,15 @@ public class ProductServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+      String id=   request.getParameter("id");
+
+
        response.setContentType("text/html");
         product = market.findProduct("snack");
        // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
+        out.println("<h1>" + message + " id = "+id+ "</h1>");
         out.println("<p>" + product + "</p>");
         out.println("</body></html>");
     }

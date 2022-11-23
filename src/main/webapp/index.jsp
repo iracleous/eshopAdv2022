@@ -11,12 +11,16 @@
 kati
     <a href="myCompany.html">Company</a> | <a href="second.jsp">Other page</a> | <a href="api/eshop/1">check api</a>
     <br><br>
-
+<img src="images/Picture1.jpg"  width="100px" height="100px">
     <form action="product" method="post">
       Name of product  <input name="productName"><br>
         <input type="submit">
     </form>
     <hr>
-    <a href="product">See my product</a>
+    <a href="product">See my product</a><br>
+    <input type="button" value="clickMe" onclick="clickMe()">
+
+<script src="js/myjs.js"></script>
+Dimitris
 </body>
 </html>

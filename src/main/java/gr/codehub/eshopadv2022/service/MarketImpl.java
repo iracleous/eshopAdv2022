@@ -9,7 +9,8 @@ public class MarketImpl implements Market{
 
                 Product
                 .builder()
-
+                .name(productName)
+                .price(1.20)
                 .id(12)
                 .build();
     }
