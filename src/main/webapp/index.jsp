@@ -9,6 +9,6 @@
 </h1>
 uuuuuu
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="product">See my product</a>
 </body>
 </html>
